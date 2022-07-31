@@ -19,7 +19,7 @@ function App() {
     });
   }, []);
   return (
-    <div className="App">
+    <>
       <Header productList={productList} setFilteredList={setFilteredList} />
       <div>
         <ProductList>
@@ -41,7 +41,7 @@ function App() {
           setAddCart={setAddCart}
         />
       </div>
-    </div>
+    </>
   );
 }
 
