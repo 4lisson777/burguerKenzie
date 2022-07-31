@@ -34,7 +34,12 @@ function App() {
             />
           ))}
         </ProductList>
-        <Cart cart={cart} setCart={setCart} />
+        <Cart
+          cart={cart}
+          setCart={setCart}
+          addCart={addCart}
+          setAddCart={setAddCart}
+        />
       </div>
     </div>
   );

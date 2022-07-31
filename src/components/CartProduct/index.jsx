@@ -1,6 +1,17 @@
 import { Product, Info, Quantity, Button } from './styles';
 
-const CartProduct = ({ name, category, img, quantity }) => {
+const CartProduct = ({ product, addCart, setAddCart }) => {
+  const { name, category, img, quantity } = product;
+
+  const handleAddQuantity = () => {
+    setAddCart([...addCart, product]);
+  };
+
+  const handleRemoveQuantity = () => {
+    const indexProduct = addCart.findIndex((item) => item.id === product.id);
+    setAddCart(addCart.filter((item, index) => index !== indexProduct));
+  };
+
   return (
     <Product>
       <Info>
@@ -13,9 +24,9 @@ const CartProduct = ({ name, category, img, quantity }) => {
         </div>
       </Info>
       <Quantity>
-        <Button>-</Button>
+        <Button onClick={() => handleRemoveQuantity()}>-</Button>
         <span>{quantity}</span>
-        <Button>+</Button>
+        <Button onClick={() => handleAddQuantity()}>+</Button>
       </Quantity>
     </Product>
   );

@@ -1,7 +1,8 @@
 import CartProduct from '../CartProduct';
 import { List, Title } from './styles';
+import CartTotal from '../CartTotal';
 
-const Cart = ({ cart, setCart }) => {
+const Cart = ({ cart, addCart, setAddCart }) => {
   return (
     <>
       <Title>Carrinho</Title>
@@ -12,19 +13,21 @@ const Cart = ({ cart, setCart }) => {
             <span>Adicione itens</span>
           </div>
         ) : (
-          cart.map(({ id, img, name, category, price, quantity }) => {
+          cart.map((product) => {
             return (
               <CartProduct
-                key={id}
-                name={name}
-                category={category}
-                img={img}
-                quantity={quantity}
+                key={product.id}
+                product={product}
+                addCart={addCart}
+                setAddCart={setAddCart}
               />
             );
           })
         )}
       </List>
+      {addCart.length !== 0 && (
+        <CartTotal addCart={addCart} setAddCart={setAddCart} />
+      )}
     </>
   );
 };

@@ -1,8 +1,8 @@
 import { Item } from './styles';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const Product = ({ product, cart, setCart, addCart, setAddCart }) => {
-  const { id, name, category, price, img } = product;
+  const { name, category, price, img } = product;
 
   useEffect(() => {
     setCart(() => {
@@ -41,7 +41,6 @@ const Product = ({ product, cart, setCart, addCart, setAddCart }) => {
         <small>{category}</small>
         <span>`R$ {price}.00`</span>
         <button onClick={() => handleAddToCart(product)}>Adicionar</button>
-        <button onClick={() => console.log(cart)}>AIAIA</button>
       </div>
     </Item>
   );
