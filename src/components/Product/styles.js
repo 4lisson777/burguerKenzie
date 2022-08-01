@@ -7,18 +7,18 @@ export const Item = styled.li`
   align-items: center; */
   /* padding: 10px; */
   border: 2px solid var(--color-gray-20);
-  border-radius: 8px;
+  border-radius: 5px;
   min-width: 300px;
   height: 346px;
 
   figure {
-    max-height: 150px;
+    max-height: 151px;
     width: 100%;
     background-color: var(--color-gray-0);
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px 8px 0 0;
+    border-radius: 2px 2px 0 0;
     img {
       object-fit: contain;
       /* object-position: top; */

@@ -9,4 +9,8 @@ export const List = styled.ul`
   overflow: auto;
   padding: 15px;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;

@@ -23,7 +23,7 @@ function App() {
     <>
       <Global />
       <Header productList={productList} setFilteredList={setFilteredList} />
-      <div>
+      <div className="container">
         <ProductList>
           {filteredList.map((product) => (
             <Product

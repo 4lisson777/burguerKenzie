@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
+  border-top: 2px solid var(--color-gray-20);
 
   div {
     display: flex;

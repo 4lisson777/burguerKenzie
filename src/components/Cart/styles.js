@@ -1,8 +1,18 @@
 import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: var(--color-gray-0);
+
+  @media (max-width: 400px) {
+    margin: 20px;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 370px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
 `;
 
 export const Empty = styled.div`
@@ -31,9 +41,13 @@ export const List = styled.ul`
   align-items: center;
   margin: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--color-gray-20);
   /* justify-content: center; */
   overflow-y: auto;
+  background-color: var(--color-gray-0);
+
+  @media (min-width: 768px) {
+    min-height: 120px;
+  }
 `;
 
 export const Title = styled.h1`
