@@ -30,4 +30,14 @@ export const Container = styled.form`
     border: none;
     border-radius: 8px;
   }
+
+  &:hover {
+    border: 2px solid var(--color-gray-100);
+    input::placeholder {
+      color: var(--color-gray-50);
+    }
+    button {
+      background-color: var(--color-primary-50);
+    }
+  }
 `;

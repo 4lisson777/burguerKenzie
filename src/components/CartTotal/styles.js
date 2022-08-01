@@ -34,5 +34,10 @@ export const Container = styled.div`
     background-color: var(--color-gray-20);
     color: var(--color-gray-50);
     font: 600 16px/19px 'Inter';
+
+    &:hover {
+      background-color: var(--color-gray-50);
+      color: var(--color-gray-20);
+    }
   }
 `;

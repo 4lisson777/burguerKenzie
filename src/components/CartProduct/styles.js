@@ -49,6 +49,11 @@ export const Quantity = styled.div`
 
   span {
     font: 500 12px/15px 'Inter';
+    color: var(--color-gray-50);
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-gray-100);
+    }
   }
 `;
 
@@ -64,4 +69,7 @@ export const Button = styled.button`
   background-color: var(--color-primary);
   color: #fff;
   /* text-align: center; */
+  &:hover {
+    background-color: var(--color-primary-50);
+  }
 `;

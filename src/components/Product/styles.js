@@ -57,4 +57,14 @@ export const Item = styled.li`
       font: 600 14px/17px 'Inter';
     }
   }
+
+  &:hover {
+    border: 2px solid var(--color-gray-100);
+
+    div {
+      button {
+        background-color: var(--color-primary-50);
+      }
+    }
+  }
 `;
