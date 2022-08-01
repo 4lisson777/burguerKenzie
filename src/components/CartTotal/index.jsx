@@ -12,7 +12,7 @@ const CartTotal = ({ addCart, setAddCart }) => {
     <Container>
       <div>
         <span>Total</span>
-        <span>`R$ {total.toFixed(2)}`</span>
+        <small>R$ {total.toFixed(2)}</small>
       </div>
       <button onClick={() => setAddCart([])}>Remover Todos</button>
     </Container>

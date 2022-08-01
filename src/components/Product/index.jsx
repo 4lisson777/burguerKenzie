@@ -39,7 +39,7 @@ const Product = ({ product, cart, setCart, addCart, setAddCart }) => {
       <div>
         <h1>{name}</h1>
         <small>{category}</small>
-        <span>`R$ {price}.00`</span>
+        <span>R$ {price.toFixed(2)}</span>
         <button onClick={() => handleAddToCart(product)}>Adicionar</button>
       </div>
     </Item>

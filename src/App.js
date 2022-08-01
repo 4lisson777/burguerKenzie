@@ -5,6 +5,7 @@ import ProductList from './components/ProductList';
 import Product from './components/Product';
 import Header from './components/Header';
 import Cart from './components/Cart';
+import Global from './styles/global';
 
 function App() {
   const [productList, setProductList] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   }, []);
   return (
     <>
+      <Global />
       <Header productList={productList} setFilteredList={setFilteredList} />
       <div>
         <ProductList>

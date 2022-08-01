@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
-  width: 100%;
-  border: 1px solid black;
+  align-items: center;
+  /* justify-content: center; */
+  flex-wrap: nowrap;
   list-style: none;
+  overflow: auto;
+  padding: 15px;
+  gap: 20px;
 `;

@@ -1,17 +1,17 @@
 import CartProduct from '../CartProduct';
-import { List, Title } from './styles';
+import { Container, Empty, List, Title } from './styles';
 import CartTotal from '../CartTotal';
 
 const Cart = ({ cart, addCart, setAddCart }) => {
   return (
-    <>
+    <Container>
       <Title>Carrinho</Title>
       <List>
         {typeof cart == 'undefined' || cart.length === 0 ? (
-          <div>
+          <Empty>
             <h1>Sua sacola está vazia</h1>
             <span>Adicione itens</span>
-          </div>
+          </Empty>
         ) : (
           cart.map((product) => {
             return (
@@ -28,7 +28,7 @@ const Cart = ({ cart, addCart, setAddCart }) => {
       {addCart.length !== 0 && (
         <CartTotal addCart={addCart} setAddCart={setAddCart} />
       )}
-    </>
+    </Container>
   );
 };
 
