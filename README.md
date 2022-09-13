@@ -15,3 +15,5 @@ Para testar o projeto em sua máquina, faça o clone, abra a pasta do projeto e 
 2. yarn start
 
 Este projeto foi uma avaliação no módulo de ReactJS da Kenzie Academy Brasil.
+
+O site pode ser acessado [aqui](https://react-entrega-s1-hamburgueria-da-kenzie-4lisson777.vercel.app/).
